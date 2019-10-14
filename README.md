@@ -30,7 +30,7 @@ All the commands issued in a session are stored in the `log.txt` file asynchrono
 
 ## Example Session
 
-![Screenshot](Screenshot.png)
+![Screenshot](Screenshot.png | height =  "400")
 
 
 
