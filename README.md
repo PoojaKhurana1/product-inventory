@@ -27,3 +27,10 @@ A simple REPL CLI application to manage products in the inventory.
 ## Command History
 
 All the commands issued in a session are stored in the `log.txt` file asynchronously (in batches of 2) i.e. If a user types in two commands we want those two to be in the same batch, if they type 3 commands stream the first two and wait for the fourth command.
+
+## Example Session
+
+![Screenshot](screenshot.png)
+
+
+
