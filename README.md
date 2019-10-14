@@ -20,28 +20,28 @@ Products with the same name can exist but not with the same SKU.
 
 2. **ADD WAREHOUSE**  WAREHOUSE#  [STOCK_LIMIT]
 
-  This command creates a new warehouse to stock products. By default, warehouses can store infinitely many products unless STOCK_LIMIT is specified. 
+  * This command creates a new warehouse to stock products. By default, warehouses can store infinitely many products unless STOCK_LIMIT is specified. 
 
 3. **STOCK** SKU  WAREHOUSE#  QTY
 
-  Stocks QTY amount of product with SKU in WAREHOUSE# warehouse. If a store has a stock limit that will be exceeded by this shipment, stock is updated with enough products so that stock limit is fulfilled. 
+  * Stocks QTY amount of product with SKU in WAREHOUSE# warehouse. If a store has a stock limit that will be exceeded by this shipment, stock is updated with enough products so that stock limit is fulfilled. 
 
 4. **UNSTOCK**  SKU  WAREHOUSE#  QTY
 
-  Unstocks QTY amount of product with SKU in WAREHOUSE# warehouse. If a store has a stock that will go below 0 for a shipment the code only unstocks enough so that 0 qunatity of the product is left in the warehouse. 
+  * Unstocks QTY amount of product with SKU in WAREHOUSE# warehouse. If a store has a stock that will go below 0 for a shipment the code only unstocks enough so that 0 qunatity of the product is left in the warehouse. 
 
 5. **LIST PRODUCTS**
 
-  List all the products in the catalog. 
+  * List all the products in the catalog. 
 
 6. **LIST WAREHOUSES**
 
-  List all the warehouses. 
+  * List all the warehouses. 
 
 
 7. **LIST WAREHOUSE** WAREHOUSE#
 
-  List all the products stocked in the specified warehouse along with the quantity of each product. 
+  * List all the products stocked in the specified warehouse along with the quantity of each product. 
 
 
 ## Command History
