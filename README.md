@@ -51,6 +51,24 @@ All the commands issued in a session are stored in the `log.txt` file asynchrono
 ## Example Session
 <img src="Screenshot.png" height="500">
 
+## To be done -
+* Unit test cases to test individual function components. Sample test cases - 
+  * Test case 1 - Function `addProduct()` in `services/Products.js` should not allow entry of products with same SKU. 
+  * Test case 2 - Similarly, function `addWarehouse()` in `services/Products.js` should not allow entry of warehouse with same number.
+  * Test case 3- Check if product added successfuly to the database (here stored in memory in array object)
+  * Test case 4 - Check if warehouse added successfuly 
+  * Test case 5 - Function `stockWarehouse` in `services/Inventory.js` should throw error if SKU or warehouse# not in data store. 
+  . Test case 6 - `index.js` Commands intended in application exists. 
+  .
+  .
+  and more....
+  
+ * Integration tests. Sample - 
+    * Test case 1 - If cli is initialized correctly and accepts commands from the user.
+    * Test case 2 - Command entered performs the intended action.
+    .
+    .
+    and more....
 
 
 
