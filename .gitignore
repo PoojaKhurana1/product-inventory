@@ -5,3 +5,8 @@
 # node.js
 #
 node_modules/
+
+# Log files
+#
+log.txt
+
