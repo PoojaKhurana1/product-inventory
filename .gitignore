@@ -5,3 +5,7 @@
 # node.js
 #
 node_modules/
+
+#Log file
+#
+log.txt
