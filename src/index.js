@@ -1,4 +1,4 @@
-	//Import library
+//Import library
 var vorpal = require('vorpal')()
 var fs = require('fs');
 
@@ -17,7 +17,6 @@ var stream = fs.createWriteStream('log.txt')
 			   .on('error', function(err) {
 			   		vorpal.log('Error writing to file. ' + err.stack);
 			   });
-var dataChunk = [];
 var writeToStream = true;
 
 //Initialize CLI with custom delimiter and welcome message
@@ -213,9 +212,10 @@ vorpal.on('client_prompt_submit',function(value) {
 	cmdHistory.push(value);
 	
 	if(writeToStream && cmdHistory.length > LOG_BATCH_SIZE) {
-
+		var dataChunk = [];
 		for (var i = 0; i < LOG_BATCH_SIZE; i++) {
-			dataChunk.push(cmdHistory.shift());
+			var data = cmdHistory.shift()
+			dataChunk.push(data);
 		}
 
 		stream.write(JSON.stringify(dataChunk,null,'\t') + '\n');
@@ -225,7 +225,6 @@ vorpal.on('client_prompt_submit',function(value) {
 //Make write stream flag true for stream to be ready for use 
 stream.on('drain', () => {
 	writeToStream = true;
-	dataChunk.length = 0;
 });
 
 
